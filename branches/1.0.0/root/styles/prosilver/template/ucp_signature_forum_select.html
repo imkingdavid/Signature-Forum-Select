@@ -1,0 +1,10 @@
+<br />
+<fieldset>
+    <label for="f" accesskey="j"><strong>{L_DISPLAY_SIGNATURE_IN}:</strong></label><br />{L_DISPLAY_SIGNATURE_IN_EXPLAIN}
+    <select multiple="multiple" name="forum_ids[]" id="f">
+    <!-- BEGIN multi_jumpbox_forums -->
+        <!-- IF multi_jumpbox_forums.S_FORUM_COUNT == 1 --><option disabled="disabled" value="-1">------------------</option><!-- ENDIF -->
+        <option value="{multi_jumpbox_forums.FORUM_ID}"{multi_jumpbox_forums.SELECTED}{multi_jumpbox_forums.DISABLED}><!-- BEGIN level -->&nbsp; &nbsp;<!-- END level -->{multi_jumpbox_forums.FORUM_NAME}</option>
+    <!-- END multi_jumpbox_forums -->
+    </select>
+</fieldset>
